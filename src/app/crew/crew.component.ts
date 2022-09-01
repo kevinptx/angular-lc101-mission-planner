@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CrewComponent implements OnInit {
   memberBeingEdited: object = null;
   inCrew: boolean = false;
-  
+
   crew: object[] = [
     {name: "Eileen Collins", firstMission: false},
     {name: "Mae Jemison", firstMission: false},
@@ -19,8 +19,6 @@ export class CrewComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  memberBeingEdited: object = null;
 
   add(memberName: string, isFirst: boolean) {
     for(let i=0; i < this.crew.length; i++){
